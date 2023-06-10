@@ -10,11 +10,12 @@
 
 
     @foreach ($consulta as $consultas)
-
-    <li>{{ $consultas->id }}</li> <a href="/editar-candidato/{{ $consultas->id }}">ATT</a>
-    <li>{{ $consultas->id }}</li> <a href="/excluir-candidato/{{ $consultas->id }}">X</a>
+    <hr>
     <li>{{ $consultas->nome }}</li>
     <li>{{ $consultas->telefone }}</li>
+    <li>{{ $consultas->id }}</li> <a href="/editar-candidato/{{ $consultas->id }}">ATT</a>
+    <li>{{ $consultas->id }}</li> <a href="/excluir-candidato/{{ $consultas->id }}">X</a>
+    <hr>
 
     @endforeach
 
